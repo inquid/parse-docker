@@ -19,6 +19,6 @@ ENV APP_ID YourAppId
 ENV MASTER_KEY YourMasterKey
 ENV FILE_KEY YourOptionalFileKey
 
-EXPOSE 8080
+EXPOSE 8080 1337
 
 CMD ["/usr/bin/supervisord"]

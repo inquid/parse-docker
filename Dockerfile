@@ -4,7 +4,7 @@ LABEL MAINTAINER contact@inquid.co
 RUN mkdir -p /usr/src/parse
 WORKDIR /usr/src/parse
 
-RUN apt-get -y install supervisor
+RUN apt install -y supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 COPY package.json /usr/src/parse/
